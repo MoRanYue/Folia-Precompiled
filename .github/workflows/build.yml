@@ -24,3 +24,10 @@ jobs:
 
     - name: Execute jar build
       run: ./gradlew createMojmapPaperclipJar
+
+    - name: Save jar
+      uses: actions/upload-artifact@v3
+      if: always()
+      with: 
+        name: precompiled
+        path: precompiled/
