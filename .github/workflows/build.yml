@@ -12,10 +12,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Set Swap Space
-      uses: pierotofy/set-swap-space@master
+    - uses: oleksiyrudenko/gha-git-credentials@v2-latest
       with:
-        swap-size-gb: 10
+        name: 'MoRanYue'
+        email: '2627706725@qq.com'
     
     - uses: actions/setup-java@v4
       with:
